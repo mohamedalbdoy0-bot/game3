@@ -279,9 +279,6 @@ setInterval(saveGame,5000);
 setInterval(()=>{ happy=Math.max(5,happy-1); health=Math.max(5,health-1); social=Math.max(5,social-1); if(kids.length){ kids.forEach(k=>{ k.age=(k.age||0)+1; let cost=kidCost(k); if(money>=cost){ money-=cost; k.happy=Math.min(100,k.happy+5); } else { k.happy=Math.max(5,k.happy-15); showToast('⚠️ معكش فلوس لمصروف '+k.name+' - مزاجه نزل'); } }); if(kids.some(k=>k.happy>=70)){ happy=Math.min(100,happy+2); social=Math.min(100,social+2); } } advanceMonth(); if(wife && Math.random()<0.6) triggerNag(); updateLifeStats(); upd(); saveGame(); },900000);
 setInterval(()=>{ updateFamilyMini(); },5000);
 </script>
-<!-- كود الاعلان في البتاعة بتاعته - بيشتغل لما تضغط بدأ وكل سنة -->
-
-  <script src="https://quge5.com/88/tag.min.js" data-zone="315842" async data-cfasync="false"></script>
 
 
 </body>
